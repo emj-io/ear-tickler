@@ -9,7 +9,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Install pre-reqs
 RUN apt-get update
-RUN apt-get -y install curl build-essential git
+RUN apt-get -y install curl build-essential git nginx
 
 # Install NVM
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | bash
